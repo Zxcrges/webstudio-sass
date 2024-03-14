@@ -1,0 +1,72 @@
+.workers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: var(--main-color);
+}
+.workers-title {
+    color: var(--add-color);
+    text-align: center;
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+.workers-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.workers-item {
+    background-color: var(--white);
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.workers-item-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.workers-item-subtitle {
+    color: var(--add-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-bottom: 10px;
+}
+.workers-item-text {
+    color: var(--add-gray);
+    text-align: center;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+.workers-icon-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 16px;
+}
+.workers-icon-item {
+    display: flex;
+    justify-content: space-around;
+}
+.workers-icon-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.workers-soc-icon {
+    fill: rgba(175, 177, 184, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.workers-icon-link:hover {
+    background-color: var(--accent-color);
+}
+.workers-icon-link:hover .workers-soc-icon {
+    fill: var(--white);
+}

@@ -1,0 +1,29 @@
+.performance {
+    padding-bottom: 94px;
+}
+.performance-title {
+    color: var(--add-color);
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+.performance-list {
+    display: flex;
+    justify-content: space-between;
+}
+.performance-item {
+    position: relative;
+}
+.performance-text {
+    color: var(--white);
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    text-align: center;
+    width: 370px;
+    padding: 27px 0;
+    bottom: 0px;
+}
