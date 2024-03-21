@@ -1,22 +1,22 @@
 .performance {
     padding-bottom: 94px;
 }
-.performance-title {
-    color: var(--add-color);
+.performance__title {
+    color: $add-color;
     text-align: center;
     font-size: 36px;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
 }
-.performance-list {
+.performance__list {
     display: flex;
     justify-content: space-between;
 }
-.performance-item {
+.performance__item {
     position: relative;
 }
-.performance-text {
-    color: var(--white);
+.performance__text {
+    color: $white;
     font-size: 14px;
     letter-spacing: 0.42px;
     text-transform: uppercase;

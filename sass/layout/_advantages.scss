@@ -2,42 +2,42 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.advantages-list {
+.advantages__list {
     display: flex;
     gap: 30px;
 }
-.advantages-item {
+.advantages__item {
     flex-basis: calc(100% - 3 * 30px / 4);
 }
-.advantages-item::before {
+.advantages__item::before {
     content: "";
     width: 270px;
     height: 120px;
     border-radius: 6px;
-    background-color: var(--main-color);
+    background-color: $main-color;
     display: block;
     margin-bottom: 30px;
     background-image: url(../images/badges_1.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
-.advantages-item:nth-child(2)::before {
+.advantages__item:nth-child(2)::before {
     background-image: url(../images/badges_2.svg);
 }
-.advantages-item:nth-child(3)::before {
+.advantages__item:nth-child(3)::before {
     background-image: url(../images/badges_3.svg);
 }
-.advantages-item:nth-child(4)::before {
+.advantages__item:nth-child(4)::before {
     background-image: url(../images/badges_4.svg);
 }
-.advantages-item-subtitle {
-    color: var(--add-color);
+.advantages__subtitle {
+    color: $add-color;
     font-size: 14px;
     letter-spacing: 0.42px;
     margin-bottom: 10px;
 }
-.advantages-item-text {
-    color: var(--add-gray);
+.advantages__text {
+    color: $add-gray;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.42px;

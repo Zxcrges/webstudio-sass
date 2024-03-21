@@ -2,8 +2,8 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.company-subtitle {
-    color: var(--add-color);
+.company__subtitle {
+    color: $add-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -11,11 +11,11 @@
     letter-spacing: 1.08px;
     margin-bottom: 50px;
 }
-.company-list {
+.company__list {
     display: flex;
     gap: 30px;
 }
-.company-item-link {
+.company__link {
     display: flex;
     border-radius: 4px;
     border: 1px solid #afb1b8;
@@ -24,18 +24,18 @@
     padding-right: 32px;
     padding-left: 32px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        border: 1px solid $accent-color;
+    }
 }
-.company-item-link:hover,
-.company-item-link:focus {
-    border: 1px solid var(--accent-color);
-}
-.company-item-icon {
+.company__icon {
     fill: #afb1b8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.company-item-link:hover .company-item-icon {
-    fill: var(--accent-color);
+.company__link:hover .company__icon {
+    fill: $accent-color;
 }
-.company-item-link:focus .company-item-icon {
-    fill: var(--accent-color);
+.company__link:focus .company__icon {
+    fill: $accent-color;
 }
