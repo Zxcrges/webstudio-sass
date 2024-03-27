@@ -2,7 +2,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.filters__list {
+.filters {
     display: flex;
     gap: 8px;
     justify-content: center;
@@ -41,7 +41,7 @@
 .projects__overlay {
     transform: translateY(0);
 }
-.wrapper__image {
+.projects__wrapper-image {
     position: relative;
     overflow: hidden;
 }
@@ -56,7 +56,7 @@
     background-color: rgba(33, 150, 243, 0.9);
     transition: transform 250ms ease;
 }
-.projects__text {
+.projects__overlay-text {
     color: var(--white);
     font-size: 18px;
     line-height: 28px;

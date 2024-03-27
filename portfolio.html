@@ -22,16 +22,17 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container">
+			<div class="container header__container">
 				<a href="./index.html" class="link logo">
-					<span class="logo__accent">Web</span>Studio</a>
+					<span class="logo__accent">Web</span>Studio
+				</a>
 				<nav class="nav">
 					<ul class="list nav__list">
 						<li class="nav__item">
-							<a href="./index.html" class="nav__link">Студія</a>
+							<a href="./index.html" class="nav__link nav__link--current">Студія</a>
 						</li>
 						<li class="nav__item">
-							<a href="./portfolio.html" class="nav__link nav__link--current">Портфоліо</a>
+							<a href="./portfolio.html" class="nav__link">Портфоліо</a>
 						</li>
 						<li class="nav__item">
 							<a href="" class="nav__link">Контакти</a>
@@ -62,7 +63,7 @@
 			<section class="projects">
 				<div class="container">
 					<h2 class="visually-hidden">Фільтри</h2>
-					<ul class="list filters__list">
+					<ul class="list filters">
 						<li class="filters__item">
 							<button type="button" class="filters__btn">Усі</button>
 						</li>
@@ -82,10 +83,10 @@
 					<ul class="list projects__list">
 						<li class="projects__item">
 							<a href="" class="link projects__link">
-								<div class="wrapper__image">
+								<div class="projects__wrapper-image">
 									<img src="./images/portfolio_img1.jpg" alt="laptop" class="projects__img" />
 									<div class="projects__overlay">
-										<p class="projects__text">
+										<p class="projects__overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
@@ -93,16 +94,16 @@
 								</div>
 								<div class="projects__wrapper">
 									<h3 class="projects__subtitle">Технокряк</h3>
-									<p class="wrapper__text">Веб-сайт</p>
+									<p class="projects__text">Веб-сайт</p>
 								</div>
 							</a>
 						</li>
 						<li class="projects__item">
 							<a href="" class="link projects__link">
-								<div class="wrapper__image">
+								<div class="projects__wrapper-image">
 									<img src="./images/portfolio_img2.jpg" alt="basketball" class="projects__img" />
 									<div class="projects__overlay">
-										<p class="projects__text">
+										<p class="projects__overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
@@ -110,16 +111,16 @@
 								</div>
 								<div class="projects__wrapper">
 									<h3 class="projects__subtitle">Постер New Orlean vs Golden Star</h3>
-									<p class="wrapper__text">Дизайн</p>
+									<p class="projects__text">Дизайн</p>
 								</div>
 							</a>
 						</li>
 						<li class="projects__item">
 							<a href="" class="link projects__link">
-								<div class="wrapper__image">
+								<div class="projects__wrapper-image">
 									<img src="./images/portfolio_img3.jpg" alt="restaurant" class="projects__img" />
 									<div class="projects__overlay">
-										<p class="projects__text">
+										<p class="projects__overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
@@ -127,16 +128,16 @@
 								</div>
 								<div class="projects__wrapper">
 									<h3 class="projects__subtitle">Ресторан Seafood</h3>
-									<p class="wrapper__text">Додаток</p>
+									<p class="projects__text">Додаток</p>
 								</div>
 							</a>
 						</li>
 						<li class="projects__item">
 							<a href="" class="link projects__link">
-								<div class="wrapper__image">
+								<div class="projects__wrapper-image">
 									<img src="./images/portfolio_img4.jpg" alt="headphones" class="projects__img" />
 									<div class="projects__overlay">
-										<p class="projects__text">
+										<p class="projects__overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
@@ -144,16 +145,16 @@
 								</div>
 								<div class="projects__wrapper">
 									<h3 class="projects__subtitle">Проєкт Prime</h3>
-									<p class="wrapper__text">Маркетинг</p>
+									<p class="projects__text">Маркетинг</p>
 								</div>
 							</a>
 						</li>
 						<li class="projects__item">
 							<a href="" class="link projects__link">
-								<div class="wrapper__image">
+								<div class="projects__wrapper-image">
 									<img src="./images/portfolio_img5.jpg" alt="package" class="projects__img" />
 									<div class="projects__overlay">
-										<p class="projects__text">
+										<p class="projects__overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
@@ -161,16 +162,16 @@
 								</div>
 								<div class="projects__wrapper">
 									<h3 class="projects__subtitle">Проєкт Boxes</h3>
-									<p class="wrapper__text">Додаток</p>
+									<p class="projects__text">Додаток</p>
 								</div>
 							</a>
 						</li>
 						<li class="projects__item">
 							<a href="" class="link projects__link">
-								<div class="wrapper__image">
+								<div class="projects__wrapper-image">
 									<img src="./images/portfolio_img6.jpg" alt="computer" class="projects__img" />
 									<div class="projects__overlay">
-										<p class="projects__text">
+										<p class="projects__overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
@@ -178,16 +179,16 @@
 								</div>
 								<div class="projects__wrapper">
 									<h3 class="projects__subtitle">Inspiration has no Borders</h3>
-									<p class="wrapper__text">Веб-сайт</p>
+									<p class="projects__text">Веб-сайт</p>
 								</div>
 							</a>
 						</li>
 						<li class="projects__item">
 							<a href="" class="link projects__link">
-								<div class="wrapper__image">
+								<div class="projects__wrapper-image">
 									<img src="./images/portfolio_img7.jpg" alt="book" class="projects__img" />
 									<div class="projects__overlay">
-										<p class="projects__text">
+										<p class="projects__overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
@@ -195,16 +196,16 @@
 								</div>
 								<div class="projects__wrapper">
 									<h3 class="projects__subtitle">Видання Limited Edition</h3>
-									<p class="wrapper__text">Дизайн</p>
+									<p class="projects__text">Дизайн</p>
 								</div>
 							</a>
 						</li>
 						<li class="projects__item">
 							<a href="" class="link projects__link">
-								<div class="wrapper__image">
+								<div class="projects__wrapper-image">
 									<img src="./images/portfolio_img8.jpg" alt="decoration" class="projects__img" />
 									<div class="projects__overlay">
-										<p class="projects__text">
+										<p class="projects__overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
@@ -212,16 +213,16 @@
 								</div>
 								<div class="projects__wrapper">
 									<h3 class="projects__subtitle">Проєкт LAB</h3>
-									<p class="wrapper__text">Маркетинг</p>
+									<p class="projects__text">Маркетинг</p>
 								</div>
 							</a>
 						</li>
 						<li class="projects__item">
 							<a href="" class="link projects__link">
-								<div class="wrapper__image">
+								<div class="projects__wrapper-image">
 									<img src="./images/portfolio_img9.jpg" alt="laptop" class="projects__img" />
 									<div class="projects__overlay">
-										<p class="projects__text">
+										<p class="projects__overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
@@ -229,7 +230,7 @@
 								</div>
 								<div class="projects__wrapper">
 									<h3 class="projects__subtitle">Growing Business</h3>
-									<p class="wrapper__text">Додаток</p>
+									<p class="projects__text">Додаток</p>
 								</div>
 							</a>
 						</li>
@@ -239,9 +240,9 @@
 		</main>
 		<footer class="footer">
 			<div class="container">
-				<div class="footer__div">
-					<a href="./index.html" class="link footer__logo">
-						<span class="footer__accent">Web</span>Studio</a>
+				<div class="footer__div-address">
+					<a href="./index.html" class="link logo footer__logo">
+						<span class="logo__accent">Web</span>Studio</a>
 					<address class="address">
 						<a href="https://goo.gl/maps/gxwUuq6DSH6itYMH8" target="_blank" class="address__link">
 							м. Київ, пр-т Лесі Українки, 26
@@ -252,43 +253,43 @@
 						<a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
 					</address>
 				</div>
-				<div class="social__div">
-					<p class="social__text">Приєднуйтесь</p>
-					<ul class="list social__list">
-						<li class="social__item">
-							<a href="https://www.instagram.com" class="social__link">
-								<svg width="20" height="20" class="social__icon">
+				<div class="footer-social">
+					<p class="footer-social__text">Приєднуйтесь</p>
+					<ul class="list footer-social__list">
+						<li class="footer-social__item">
+							<a href="https://www.instagram.com" class="footer-social__link">
+								<svg width="20" height="20" class="footer-social__icon">
 									<use href="./images/symbol-defs.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="social__item">
-							<a href="https://twitter.com/?lang=ru" class="social__link">
-								<svg width="20" height="20" class="social__icon">
+						<li class="footer-social__item">
+							<a href="https://twitter.com/?lang=ru" class="footer-social__link">
+								<svg width="20" height="20" class="footer-social__icon">
 									<use href="./images/symbol-defs.svg#icon-twitter"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="social__item">
-							<a href="https://de-de.facebook.com" class="social__link">
-								<svg width="20" height="20" class="social__icon">
+						<li class="footer-social__item">
+							<a href="https://de-de.facebook.com" class="footer-social__link">
+								<svg width="20" height="20" class="footer-social__icon">
 									<use href="./images/symbol-defs.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="social__item">
-							<a href="https://www.linkedin.com" class="social__link">
-								<svg width="20" height="20" class="social__icon">
+						<li class="footer-social__item">
+							<a href="https://www.linkedin.com" class="footer-social__link">
+								<svg width="20" height="20" class="footer-social__icon">
 									<use href="./images/symbol-defs.svg#icon-linkedin"></use>
 								</svg>
 							</a>
 						</li>
 					</ul>
 				</div>
-				<div class="footer__div">
-					<p class="footer__text">Підпишіться на розсилку</p>
-					<form class="footer__form">
-						<input type="email" name="email" placeholder="E-mail" class="footer__input" />
+				<div class="footer-div-form">
+					<p class="footer-div-form__text">Підпишіться на розсилку</p>
+					<form class="footer-div-form__form">
+						<input type="email" name="email" placeholder="E-mail" class="footer-div-form__input" />
 						<button type="submit" class="footer__btn">Підписатися</button>
 					</form>
 				</div>

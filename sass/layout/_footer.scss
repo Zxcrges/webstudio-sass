@@ -3,16 +3,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer__logo {
-    color: $white;
-    font-family: Raleway;
-    font-size: 26px;
-    letter-spacing: 0.78px;
-    margin-bottom: 20px;
-}
-.footer__accent {
-    color: $accent-color;
-}
 .address {
     font-style: normal;
 }
@@ -41,13 +31,13 @@
 .footer .container {
     display: flex;
 }
-.footer__div {
+.footer__div-address {
     padding-top: 10px;
 }
-.social__div {
+.footer-social__div {
     padding-top: 15px;
 }
-.social__text {
+.footer-social__text {
     color: $white;
     font-size: 14px;
     font-weight: 700;
@@ -56,10 +46,10 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-.social__icon {
+.footer-social__icon {
     fill: $white;
 }
-.social__link {
+.footer-social__link {
     border-radius: 50%;
     padding: 12px;
     display: flex;
@@ -75,17 +65,17 @@
         cursor: pointer;
     }
 }
-.social__list {
+.footer-social__list {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-.footer__form {
+.footer-div-form__form {
     display: flex;
     align-items: center;
     gap: 12px;
 }
-.footer__text {
+.footer-div-form__text {
     color: $white;
     font-size: 14px;
     font-weight: 700;
@@ -94,7 +84,7 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-.footer__input {
+.footer-div-form__input {
     color: rgba(255, 255, 255, 0.6);
     line-height: 20px;
     letter-spacing: 0.48px;
@@ -111,7 +101,7 @@
         outline: none;
     }
 }
-.footer__div {
+.footer-div-form {
     margin-left: 93px;
     padding-top: 10px;
 }

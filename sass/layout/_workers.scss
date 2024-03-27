@@ -47,11 +47,11 @@
     gap: 10px;
     padding-top: 16px;
 }
-.workers-icon-item {
+.workers-icon-list__item {
     display: flex;
     justify-content: space-around;
 }
-.workers-icon-link {
+.workers-icon-list__link {
     display: flex;
     width: 44px;
     height: 44px;
@@ -63,10 +63,10 @@
         background-color: $accent-color;
     }
 }
-.workers-soc-icon {
+.workers-icon-list__icon {
     fill: rgba(175, 177, 184, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.workers-icon-link:hover .workers-soc-icon {
+.workers-icon-list__link:hover .workers-icon-list__icon {
     fill: $white;
 }
