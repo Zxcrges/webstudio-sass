@@ -147,7 +147,6 @@ img {
   font-weight: 500;
   letter-spacing: 0.28px;
   text-decoration: none;
-  display: flex;
   gap: 10px;
   align-items: center;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -456,10 +455,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.company__link:hover .company__icon {
-  fill: #2196f3;
-}
-
+.company__link:hover .company__icon,
 .company__link:focus .company__icon {
   fill: #2196f3;
 }
@@ -758,6 +754,29 @@ img {
   gap: 8px;
 }
 
+.modal__custom-checkbox {
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border-color: #212121;
+  border-style: solid;
+  border-width: 2px;
+}
+.modal__custom-checkbox:hover {
+  border-color: #2196f3;
+}
+
+.modal__checkbox:focus + .modal__custom-checkbox {
+  border-color: #2196f3;
+}
+
+.modal__checkbox:checked + .modal__custom-checkbox {
+  background-color: #2196f3;
+  background-image: url(../images/modal_checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .modal__link {
   color: #2196f3;
   letter-spacing: 0.42px;
@@ -894,6 +913,14 @@ img {
   letter-spacing: 0.48px;
 }
 
+.modal__submit, .hero__btn, .footer__btn {
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  border-radius: 4px;
+  background: #2196f3;
+  border: none;
+}
+
 .footer__btn {
   color: #fff;
   display: -webkit-box;
@@ -902,14 +929,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 700;
   line-height: 30px;
-  letter-spacing: 0.96px;
-  border-radius: 4px;
-  background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  border: none;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 28px;
@@ -933,17 +955,12 @@ img {
 }
 
 .hero__btn {
-  background: #2196f3;
   color: #fff;
-  font-weight: 700;
   line-height: 1.87;
-  letter-spacing: 0.96px;
   display: block;
   margin: 0 auto;
   padding: 10px 32px;
-  border-radius: 4px;
   cursor: pointer;
-  border: none;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -972,14 +989,9 @@ img {
 
 .modal__submit {
   color: #fff;
-  font-weight: 700;
   line-height: 30px;
-  letter-spacing: 0.96px;
-  border-radius: 4px;
-  background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  border: none;
   display: block;
   margin: 0 auto;
   padding: 10px 52px 10px 52px;

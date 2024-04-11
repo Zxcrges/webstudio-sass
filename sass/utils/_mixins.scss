@@ -1,0 +1,9 @@
+@mixin flex-settings($gap, $justify-content){
+    gap: $gap;
+    justify-content: $justify-content;
+}
+@mixin text-settings($letter-spacing, $line-height, $font-size) {
+    letter-spacing: $letter-spacing;
+    line-height: $line-height;
+    font-size: $font-size;
+}

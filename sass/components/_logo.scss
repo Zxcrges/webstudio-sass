@@ -1,7 +1,6 @@
 .logo {
     font-family: Raleway;
-    font-size: 26px;
-    letter-spacing: 0.78px;
+    @include text-settings($letter-spacing: 0.78px, $font-size: 26px);
     margin-right: 93px;
     color: #000;
 }

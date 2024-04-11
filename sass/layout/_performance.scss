@@ -4,21 +4,19 @@
 .performance__title {
     color: $add-color;
     text-align: center;
-    font-size: 36px;
-    letter-spacing: 1.08px;
+    @include text-settings($letter-spacing: 1.08px, $font-size: 36px);
     margin-bottom: 50px;
 }
 .performance__list {
     display: flex;
-    justify-content: space-between;
+    @include flex-settings($justify-content: space-between);
 }
 .performance__item {
     position: relative;
 }
 .performance__text {
     color: $white;
-    font-size: 14px;
-    letter-spacing: 0.42px;
+    @include text-settings($letter-spacing: 0.42px, $font-size: 14px);
     text-transform: uppercase;
     background: rgba(47, 48, 58, 0.8);
     position: absolute;

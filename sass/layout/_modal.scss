@@ -42,19 +42,17 @@
 .modal__text {
 	color: $add-color;
 	text-align: center;
-	font-size: 20px;
 	font-weight: 700;
-	line-height: normal;
-	letter-spacing: 0.6px;
+	@include text-settings($letter-spacing: 0.6px, 
+	$line-height: normal, $font-size: 20px);
 	margin-bottom: 12px;
 }
 .modal__label {
 	display: flex;
 	flex-direction: column;
 	color: $add-gray;
-	font-size: 12px;
-	line-height: normal;
-	letter-spacing: 0.12px;
+	@include text-settings($letter-spacing: 0.12px, 
+	$line-height: normal, $font-size: 12px);
 	position: relative;
 	margin-top: 10px;
 	&:first-child {
@@ -72,8 +70,7 @@
 }
 .modal__message {
 	color: rgba(117, 117, 117, 0.5);
-	line-height: normal;
-	letter-spacing: 0.12px;
+	@include text-settings($letter-spacing: 0.12px, $line-height: normal);
 	padding: 12px 16px 12px 16px;
 	border-radius: 4px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
@@ -106,16 +103,34 @@
 	color: $add-gray;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	font-size: 14px;
-	line-height: 24px;
-	letter-spacing: 0.42px;
+	@include text-settings($letter-spacing: 0.42px, 
+	$line-height: 24px, $font-size: 14px);
 	margin-top: 20px;
 	margin-bottom: 30px;
-	gap: 8px;
+	@include flex-settings($gap: 8px, $justify-content: center);
+}
+.modal__custom-checkbox {
+	width: 16px;
+	height: 15px;
+	border-radius: 2px;
+	border-color: $add-color;
+	border-style: solid;
+	border-width: 2px;
+	&:hover {
+		border-color: $accent-color;
+	}
+}
+.modal__checkbox:focus + .modal__custom-checkbox {
+	border-color: $accent-color;
+}
+.modal__checkbox:checked + .modal__custom-checkbox{
+	background-color: $accent-color;
+	background-image: url(../images/modal_checkbox.svg);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .modal__link {
 	color: $accent-color;
-	letter-spacing: 0.42px;
+	@include text-settings($letter-spacing: 0.42px);
 	text-decoration-line: underline;
 }

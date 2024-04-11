@@ -5,15 +5,14 @@
 .company__subtitle {
     color: $add-color;
     text-align: center;
-    font-size: 36px;
     font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
+    @include text-settings($letter-spacing: 1.08px, 
+    $line-height: normal, $font-size: 36px);
     margin-bottom: 50px;
 }
 .company__list {
     display: flex;
-    gap: 30px;
+    @include flex-settings($gap: 30px);
 }
 .company__link {
     display: flex;
@@ -33,9 +32,7 @@
     fill: #afb1b8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.company__link:hover .company__icon {
-    fill: $accent-color;
-}
+.company__link:hover .company__icon,
 .company__link:focus .company__icon {
     fill: $accent-color;
 }

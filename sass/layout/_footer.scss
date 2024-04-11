@@ -8,9 +8,8 @@
 }
 .address__link {
     color: rgba(255, 255, 255, 0.6);
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
+    @include text-settings($letter-spacing: 0.42px, 
+    $line-height: 1.71, $font-size: 14px);
     text-decoration: none;
     margin-bottom: 8px;
     display: inline-block;
@@ -39,10 +38,9 @@
 }
 .footer-social__text {
     color: $white;
-    font-size: 14px;
     font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
+    @include text-settings($letter-spacing: 0.42px, 
+    $line-height: normal, $font-size: 14px);
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -55,7 +53,7 @@
     display: flex;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
-    justify-content: center;
+    @include flex-settings($justify-content: center);
     width: 44px;
     height: 44px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -67,27 +65,24 @@
 }
 .footer-social__list {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    @include flex-settings($gap: 10px, $justify-content: center);
 }
 .footer-div-form__form {
     display: flex;
     align-items: center;
-    gap: 12px;
+    @include flex-settings($gap: 12px);
 }
 .footer-div-form__text {
     color: $white;
-    font-size: 14px;
     font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
+    @include text-settings($letter-spacing: 0.42px, 
+    $line-height: normal, $font-size: 14px);
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 .footer-div-form__input {
     color: rgba(255, 255, 255, 0.6);
-    line-height: 20px;
-    letter-spacing: 0.48px;
+    @include text-settings($letter-spacing: 0.48px, $line-height: 20px);
     background: transparent;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);

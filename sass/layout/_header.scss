@@ -8,13 +8,12 @@
 }
 .nav__list {
     display: flex;
-    gap: 50px;
+    @include flex-settings($gap: 50px);
 }
 .nav__link {
     color: $add-color;
-    font-size: 14px;
     font-weight: 500;
-    letter-spacing: 0.28px;
+    @include text-settings($letter-spacing: 0.28px, $font-size: 14px);
     text-decoration: none;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -43,19 +42,17 @@
 }
 .contact {
     display: flex;
-    gap: 50px;
+    @include flex-settings($gap: 50px);
     margin-left: auto;
 }
 .contact__link {
     display: flex;
     align-items: center;
     color: $add-gray;
-    font-size: 14px;
     font-weight: 500;
-    letter-spacing: 0.28px;
+    @include text-settings($letter-spacing: 0.28px, $font-size: 14px);
     text-decoration: none;
-    display: flex;
-    gap: 10px;
+    @include flex-settings($gap: 10px);
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
