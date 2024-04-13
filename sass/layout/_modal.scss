@@ -43,16 +43,14 @@
 	color: $add-color;
 	text-align: center;
 	font-weight: 700;
-	@include text-settings($letter-spacing: 0.6px, 
-	$line-height: normal, $font-size: 20px);
+	@include text-settings(0.6px, normal, 20px);
 	margin-bottom: 12px;
 }
 .modal__label {
 	display: flex;
 	flex-direction: column;
 	color: $add-gray;
-	@include text-settings($letter-spacing: 0.12px, 
-	$line-height: normal, $font-size: 12px);
+	@include text-settings(0.12px, normal, 12px);
 	position: relative;
 	margin-top: 10px;
 	&:first-child {
@@ -70,7 +68,7 @@
 }
 .modal__message {
 	color: rgba(117, 117, 117, 0.5);
-	@include text-settings($letter-spacing: 0.12px, $line-height: normal);
+	@include text-settings(0.12px, normal, 16px);
 	padding: 12px 16px 12px 16px;
 	border-radius: 4px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
@@ -103,11 +101,10 @@
 	color: $add-gray;
 	display: flex;
 	align-items: center;
-	@include text-settings($letter-spacing: 0.42px, 
-	$line-height: 24px, $font-size: 14px);
+	@include text-settings(0.42px, 24px, 14px);
 	margin-top: 20px;
 	margin-bottom: 30px;
-	@include flex-settings($gap: 8px, $justify-content: center);
+	@include flex-settings(8px, center);
 }
 .modal__custom-checkbox {
 	width: 16px;
@@ -131,6 +128,6 @@
 }
 .modal__link {
 	color: $accent-color;
-	@include text-settings($letter-spacing: 0.42px);
+	@include text-settings(0.42px, normal, 16px);
 	text-decoration-line: underline;
 }

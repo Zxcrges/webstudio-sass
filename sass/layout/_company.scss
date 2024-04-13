@@ -6,13 +6,12 @@
     color: $add-color;
     text-align: center;
     font-weight: 700;
-    @include text-settings($letter-spacing: 1.08px, 
-    $line-height: normal, $font-size: 36px);
+    @include text-settings(1.08px, normal, 36px);
     margin-bottom: 50px;
 }
 .company__list {
     display: flex;
-    @include flex-settings($gap: 30px);
+    @include flex-settings(30px, center);
 }
 .company__link {
     display: flex;

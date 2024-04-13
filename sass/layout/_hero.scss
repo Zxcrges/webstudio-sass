@@ -8,8 +8,7 @@
     color: $white;
     text-align: center;
     font-weight: 900;
-    @include text-settings($letter-spacing: 2.64px, 
-    $line-height: 1.36, $font-size: 44px);
+    @include text-settings(2.64px, 1.36, 44px);
     text-transform: uppercase;
     margin-bottom: 30px;
 }

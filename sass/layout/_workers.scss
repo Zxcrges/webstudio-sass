@@ -8,16 +8,16 @@
     color: $add-color;
     text-align: center;
     // font-size: 36px;
-    @include text-settings($letter-spacing: 1.08px, $line-height: normal);
+    @include text-settings(1.08px, normal, 16px);
     // margin-bottom: 50px;
     font-size: 28px;
     margin-bottom: 30px;
 }
 .workers__list {
     display: flex;
-    @include flex-settings($justify-content: center);
+    @include flex-settings(0 ,center);
     flex-direction: column;
-    @include flex-settings($gap: 30px);
+    @include flex-settings(30px, center);
     @media screen and (min-width:768px) {
         flex-direction: row;
         flex-wrap: wrap;
@@ -48,17 +48,17 @@
     text-align: center;
     font-size: 16px;
     font-weight: 500;
-    @include text-settings($letter-spacing: 0.48px, $line-height: normal);
+    @include text-settings(0.48px, normal, 16px);
     margin-bottom: 10px;
 }
 .workers__text {
     color: $add-gray;
     text-align: center;
-    @include text-settings($letter-spacing: 0.48px, $line-height: normal);
+    @include text-settings(0.48px, normal, 16px);
 }
 .workers-icon-list {
     display: flex;
-    @include flex-settings($gap: 10px, $justify-content: center);
+    @include flex-settings(10px, center);
     margin-top: 16px;
 }
 .workers-icon-list__item {
@@ -70,7 +70,7 @@
     width: 44px;
     height: 44px;
     align-items: center;
-    @include flex-settings($justify-content: center);
+    @include flex-settings(0 ,center);
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {

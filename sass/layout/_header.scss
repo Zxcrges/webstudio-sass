@@ -8,12 +8,12 @@
 }
 .nav__list {
     display: flex;
-    @include flex-settings($gap: 50px);
+    @include flex-settings(50px, center);
 }
 .nav__link {
     color: $add-color;
     font-weight: 500;
-    @include text-settings($letter-spacing: 0.28px, $font-size: 14px);
+    @include text-settings(0.28px, normal, 14px);
     text-decoration: none;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -42,7 +42,7 @@
 }
 .contact {
     display: flex;
-    @include flex-settings($gap: 50px);
+    @include flex-settings(50px, center);
     margin-left: auto;
 }
 .contact__link {
@@ -50,9 +50,9 @@
     align-items: center;
     color: $add-gray;
     font-weight: 500;
-    @include text-settings($letter-spacing: 0.28px, $font-size: 14px);
+    @include text-settings(0.28px, normal, 14px);
     text-decoration: none;
-    @include flex-settings($gap: 10px);
+    @include flex-settings(10px, center);
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,

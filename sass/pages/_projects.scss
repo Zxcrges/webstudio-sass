@@ -4,7 +4,7 @@
 }
 .filters {
     display: flex;
-    @include flex-settings($gap: 8px, $justify-content: center);
+    @include flex-settings(8px, center);
     margin-bottom: 50px;
 }
 .filters__btn {
@@ -14,7 +14,7 @@
     background: $main-color;
     color: $add-color;
     font-weight: 500;
-    @include text-settings($letter-spacing: 0.48px, $line-height: 1.62);
+    @include text-settings(0.48px, 1.62, 16px);
     border: none;
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -29,7 +29,7 @@
 .projects__list {
     display: flex;
     flex-wrap: wrap;
-    @include flex-settings($gap: 30px, $justify-content: center);
+    @include flex-settings(30px, center);
 }
 .projects__item {
     flex-basis: calc((100% - 2 * 30px) / 3);
@@ -55,8 +55,7 @@
 }
 .projects__overlay-text {
     color: $white;
-    @include text-settings($letter-spacing: 3%, 
-    $line-height: 28px, $font-size: 18px);
+    @include text-settings(3%, 28px, 18px);
 }
 .projects__link:hover .projects__overlay {
     transform: translateX(0);
@@ -77,11 +76,10 @@
 }
 .projects__subtitle {
     color: $add-color;
-    @include text-settings($letter-spacing: 1.08px, 
-    $line-height: 2, $font-size: 18px);
+    @include text-settings(1.08px, 2, 18px);
     margin-bottom: 4px;
 }
 .projects__text {
     color: $add-gray;
-        @include text-settings($letter-spacing: 0.48px, $line-height: 1.87);
+        @include text-settings(0.48px, 1.87, 16px);
 }

@@ -1,6 +1,6 @@
 %btn {
     font-weight: 700;
-    @include text-settings($letter-spacing: 0.96px);
+    @include text-settings(0.96px, normal, 16px);
     border-radius: 4px;
     background: $accent-color;
     border: none;
@@ -10,12 +10,12 @@
     color: $white;
     display: flex;
     align-items: center;
-    @include text-settings($line-height: 30px);
+    @include text-settings(0, 30px, 16px);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 28px;
-    @include flex-settings($gap: 10px);
+    @include flex-settings(10px, center);
     padding-right: 28px;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
@@ -36,7 +36,7 @@
 .hero__btn {
     @extend %btn;
     color: $white;
-    @include text-settings($line-height: 1.87);
+    @include text-settings(0, 1.87, 16px);
     display: block;
     margin: 0 auto;
     padding: 10px 32px;
@@ -53,7 +53,7 @@
     padding: 6px;
     display: flex;
     align-items: center;
-    @include flex-settings($justify-content: center);
+    @include flex-settings(0 ,center);
     position: absolute;
     background: none;
     right: 8px;
@@ -62,7 +62,7 @@
 .modal__submit {
     @extend %btn;
     color: $white;
-    @include text-settings($line-height: 30px);
+    @include text-settings(0, 30px, 16px);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     display: block;
     margin: 0 auto;

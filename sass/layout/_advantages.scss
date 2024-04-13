@@ -4,7 +4,7 @@
 }
 .advantages__list {
     display: flex;
-    @include flex-settings($gap: 30px);
+    @include flex-settings(30px, center);
 }
 .advantages__item {
     flex-basis: calc(100% - 3 * 30px / 4);
@@ -32,10 +32,10 @@
 }
 .advantages__subtitle {
     color: $add-color;
-    @include text-settings($letter-spacing: 0.42px, $font-size:14px);
+    @include text-settings(0.42px, normal, 14px);
     margin-bottom: 10px;
 }
 .advantages__text {
     color: $add-gray;
-    @include text-settings($letter-spacing: 0.42px, $line-height: 1.71, $font-size:14px);
+    @include text-settings(0.42px, 1.71, 14px);
 }
