@@ -7,3 +7,6 @@
     line-height: $line-height;
     font-size: $font-size;
 }
+@mixin flex-basis($gap, $count-items) {
+    flex-basis: calc((100% - $gap * (#{$count-items} - 1)) / #{$count-items});
+}

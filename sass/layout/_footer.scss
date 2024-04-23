@@ -1,7 +1,6 @@
 .footer {
     background: $bg-color;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
 }
 .address {
     font-style: normal;
@@ -12,7 +11,7 @@
     text-decoration: none;
     margin-bottom: 8px;
     display: inline-block;
-    margin-right: 70px;
+    // margin-right: 70px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
@@ -38,7 +37,7 @@
 .footer-social__text {
     color: $white;
     font-weight: 700;
-    @include text-settings( 0.42px, normal, 14px);
+    @include text-settings(0.42px, normal, 14px);
     text-transform: uppercase;
     margin-bottom: 20px;
 }

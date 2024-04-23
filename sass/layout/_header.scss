@@ -1,17 +1,19 @@
 .header {
-    padding-top: 25px;
-    padding-bottom: 24px;
+    // padding-top: 25px;
+    // padding-bottom: 24px;
+    padding: 16px 0;
 }
 .header__container {
     display: flex;
     align-items: center;
 }
 .nav__list {
-    display: flex;
+    display: none;
     @include flex-settings(50px, center);
 }
 .nav__link {
     color: $add-color;
+    display: none;
     font-weight: 500;
     @include text-settings(0.28px, normal, 14px);
     text-decoration: none;
@@ -24,6 +26,7 @@
 }
 .nav__link--current {
     color: $accent-color;
+    display: none;
     &:hover::after {
         transform: scale(1.2);
     }
@@ -41,12 +44,12 @@
     }
 }
 .contact {
-    display: flex;
+    display: none;
     @include flex-settings(50px, center);
     margin-left: auto;
 }
 .contact__link {
-    display: flex;
+    display: none;
     align-items: center;
     color: $add-gray;
     font-weight: 500;

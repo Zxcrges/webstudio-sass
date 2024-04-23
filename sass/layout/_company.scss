@@ -1,17 +1,23 @@
 .company {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding: 60px 0;
 }
 .company__subtitle {
     color: $add-color;
     text-align: center;
     font-weight: 700;
-    @include text-settings(1.08px, normal, 36px);
-    margin-bottom: 50px;
+    // @include text-settings(1.08px, normal, 36px);
+    // margin-bottom: 50px;
+    @include text-settings(0.84px, normal, 28px);
+    margin-bottom: 30px;
 }
 .company__list {
     display: flex;
-    @include flex-settings(30px, center);
+    gap: 30px;
+}
+.company__item {
+    @include flex-basis(30px, 2);
 }
 .company__link {
     display: flex;

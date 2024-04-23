@@ -8,14 +8,13 @@
     color: $add-color;
     text-align: center;
     // font-size: 36px;
-    @include text-settings(1.08px, normal, 16px);
+    // @include text-settings(1.08px, normal, 16px);
     // margin-bottom: 50px;
-    font-size: 28px;
+    @include text-settings(0.84px, normal, 28px);
     margin-bottom: 30px;
 }
 .workers__list {
     display: flex;
-    @include flex-settings(0 ,center);
     flex-direction: column;
     @include flex-settings(30px, center);
     @media screen and (min-width:768px) {
@@ -46,7 +45,6 @@
 .workers__subtitle {
     color: $add-color;
     text-align: center;
-    font-size: 16px;
     font-weight: 500;
     @include text-settings(0.48px, normal, 16px);
     margin-bottom: 10px;
@@ -63,7 +61,6 @@
 }
 .workers-icon-list__item {
     display: flex;
-
 }
 .workers-icon-list__link {
     display: flex;
