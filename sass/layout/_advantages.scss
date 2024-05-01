@@ -6,7 +6,7 @@
 .advantages__list {
     display: flex;
     @include flex-settings(30px, center);
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 .advantages__item {
     @media screen and (min-width:768px) {
@@ -20,7 +20,7 @@
     content: "";
     // width: 270px;
     // height: 120px;
-    width: 390px;
+    width: 100%;
     height: 120px;
     border-radius: 6px;
     background-color: $main-color;

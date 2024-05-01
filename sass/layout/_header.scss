@@ -7,8 +7,11 @@
     display: flex;
     align-items: center;
 }
-.nav__list {
+.nav {
     display: none;
+}
+.nav__list {
+    display: flex;
     @include flex-settings(50px, center);
 }
 .nav__link {
@@ -47,6 +50,13 @@
     display: none;
     @include flex-settings(50px, center);
     margin-left: auto;
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+    }
+    @media screen and (min-width:1200px) {
+        flex-direction: row;
+    }
 }
 .contact__link {
     display: none;
@@ -69,5 +79,12 @@
 }
 .contact-item-link:hover .contact-item-icon,
 .contact-item-link:focus .contact-item-icon {
+    fill: $accent-color;
+}
+.burger__btn {
+    border-color: transparent;
+    border-radius: 0;
+}
+.burger__svg {
     fill: $accent-color;
 }
