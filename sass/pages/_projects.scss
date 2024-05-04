@@ -1,11 +1,16 @@
 .projects {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 0;
+    @media screen and (min-width:1200px) {
+        padding: 94px 0;
+    }
 }
 .filters {
     display: flex;
     @include flex-settings(8px, center);
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 .filters__btn {
     min-width: 73px;
@@ -29,10 +34,11 @@
 .projects__list {
     display: flex;
     flex-wrap: wrap;
-    @include flex-settings(30px, center);
+    // @include flex-settings(30px, center);
 }
 .projects__item {
-    flex-basis: calc((100% - 2 * 30px) / 3);
+    // flex-basis: calc((100% - 2 * 30px) / 3);
+    padding-bottom: 30px;
 }
 .projects__item:hover,
 .projects__overlay {

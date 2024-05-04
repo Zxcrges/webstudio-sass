@@ -1,14 +1,23 @@
 .header {
-    // padding-top: 25px;
-    // padding-bottom: 24px;
     padding: 16px 0;
+    @media screen and (min-width:1200px) {
+        padding: 25px 0;
+    }
 }
 .header__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .nav {
     display: none;
+    @media screen and (min-width:768px) {
+        display: block;
+        padding-left: 88px;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
 }
 .nav__list {
     display: flex;
@@ -26,6 +35,12 @@
     &:focus {
         color: $accent-color;
     }
+        @media screen and (min-width:768px) {
+            display: block;
+        }
+        @media screen and (min-width:1200px) {
+            display: flex;
+        }
 }
 .nav__link--current {
     color: $accent-color;
@@ -45,17 +60,25 @@
         top: 42px;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+    @media screen and (min-width:768px) {
+        display: block;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
 }
 .contact {
     display: none;
-    @include flex-settings(50px, center);
+    
     margin-left: auto;
     @media screen and (min-width:768px) {
         display: flex;
         flex-direction: column;
+        @include flex-settings(10px, center);
     }
     @media screen and (min-width:1200px) {
         flex-direction: row;
+        @include flex-settings(50px, center);
     }
 }
 .contact__link {
@@ -71,6 +94,12 @@
     &:hover,
     &:focus {
         color: $accent-color;
+    }
+    @media screen and (min-width:768px) {
+        display: block;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
     }
 }
 .contact__icon {

@@ -26,13 +26,23 @@
     }
 }
 .footer .container {
-    display: flex;
+    display: block;
+    @media screen and (min-width:768px) {
+        display: block;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
 }
 .footer__div-address {
-    padding-top: 10px;
+    // padding-top: 10px;
+    padding-bottom: 60px;
+    display: flex;
+    // уточнить как поставить.
 }
-.footer-social__div {
-    padding-top: 15px;
+.footer-social {
+    // padding-top: 15px;
+    padding-bottom: 60px;
 }
 .footer-social__text {
     color: $white;
@@ -40,6 +50,7 @@
     @include text-settings(0.42px, normal, 14px);
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-align: center;
 }
 .footer-social__icon {
     fill: $white;
@@ -64,10 +75,16 @@
     display: flex;
     @include flex-settings(10px, center);
 }
+.footer-div-form {
+    // margin-left: 93px;
+    // padding-top: 10px;
+}
 .footer-div-form__form {
     display: flex;
     align-items: center;
-    @include flex-settings(12px, center);
+    // @include flex-settings(12px, center);
+    @include flex-settings(20px, center);
+    flex-direction: column;
 }
 .footer-div-form__text {
     color: $white;
@@ -75,6 +92,7 @@
     @include text-settings(0.42px, normal, 14px);
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-align: center;
 }
 .footer-div-form__input {
     color: rgba(255, 255, 255, 0.6);
@@ -91,8 +109,4 @@
         border-color: $accent-color;
         outline: none;
     }
-}
-.footer-div-form {
-    margin-left: 93px;
-    padding-top: 10px;
 }
