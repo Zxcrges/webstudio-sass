@@ -18,13 +18,20 @@
 .company__list {
     display: flex;
     gap: 30px;
-    // как поставить по 2 штучки, уточнить.
+    flex-wrap: wrap;
+    @media screen and (min-width:1200px) {
+        flex-wrap: nowrap;
+    }
 }
 .company__item {
     @include flex-basis(30px, 2);
+    @media screen and (min-width:768px) {
+        @include flex-basis(30px, 3);
+    }
 }
 .company__link {
     display: flex;
+    justify-content: center;    
     border-radius: 4px;
     border: 1px solid #afb1b8;
     padding-top: 16px;

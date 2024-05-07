@@ -28,21 +28,40 @@
 .footer .container {
     display: block;
     @media screen and (min-width:768px) {
-        display: block;
+        display: flex;
+        column-gap: 165px;
+        row-gap: 60px;
+        flex-wrap: wrap;
     }
     @media screen and (min-width:1200px) {
         display: flex;
+        flex-wrap: nowrap;
+        column-gap: 0;
+        row-gap: 0;
     }
 }
 .footer__div-address {
     // padding-top: 10px;
-    padding-bottom: 60px;
-    display: flex;
-    // уточнить как поставить.
+    margin-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width:768px) {
+        margin-left: 61px;
+    }
+    @media screen and (min-width:1200px) {
+        text-align: left;
+        margin-right: 70px;
+    }
 }
 .footer-social {
-    // padding-top: 15px;
-    padding-bottom: 60px;
+    padding-top: 15px;
+    margin-bottom: 55px;
+    @media screen and (min-width:768px) {
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-right: 93px;
+        margin-bottom: 0;
+    }
 }
 .footer-social__text {
     color: $white;
@@ -78,6 +97,12 @@
 .footer-div-form {
     // margin-left: 93px;
     // padding-top: 10px;
+    @media screen and (min-width:768px) {
+        margin-left: 151px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-left: 0;
+    }
 }
 .footer-div-form__form {
     display: flex;
@@ -101,9 +126,15 @@
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 15px;
-    width: 358px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 15px;
+    width: 290px;
+    @media screen and (min-width:480px) {
+        width: 450px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 358px;
+    }
     &:hover,
     &:focus {
         border-color: $accent-color;

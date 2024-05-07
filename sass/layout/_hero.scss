@@ -44,11 +44,8 @@
     font-weight: 900;
     text-transform: uppercase;
     margin-bottom: 30px;
-    @include text-settings(1.56px, 42px, 26px)
-    // @media screen and (min-width:768px) {
-    //     @include text-settings(1.56px, 42px, 26px)
-    // }
-    // @media screen and (min-width:1200px) {
-    //     @include text-settings(2.64px, 1.36, 44px);
-    // }
+    @include text-settings(1.56px, 42px, 26px);
+    @media screen and (min-width:1200px) {
+        @include text-settings(2.64px, 1.36, 44px);
+    }
 }

@@ -7,11 +7,12 @@
 .workers__title {
     color: $add-color;
     text-align: center;
-    // font-size: 36px;
-    // @include text-settings(1.08px, normal, 16px);
-    // margin-bottom: 50px;
     @include text-settings(0.84px, normal, 28px);
+    // margin-bottom: 50px;
     margin-bottom: 36px;
+    @media screen and (min-width:1200px) {
+        @include text-settings(1.08px, normal, 36px);
+    }
 }
 .workers__list {
     display: flex;
