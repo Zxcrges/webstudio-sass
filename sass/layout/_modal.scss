@@ -32,6 +32,25 @@
 	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
 		0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+.modal__btn-close {
+	border: 2px solid #0000001a;
+	border-radius: 50%;
+	padding: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	background: none;
+	right: 8px;
+	top: 8px;
+}
+.modal__btn-close-icon {
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__btn-close-icon:hover,
+.modal__btn-close-icon:focus {
+	fill: $accent-color;
+}
 .modal__svg {
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	&:hover,
@@ -52,7 +71,8 @@
 	color: $add-gray;
 	@include text-settings(0.12px, normal, 12px);
 	position: relative;
-	margin-top: 10px;
+	margin-bottom: 10px;
+	@include flex-settings(8px, center);
 	&:first-child {
 		margin-top: 0;
 	}
@@ -97,14 +117,17 @@
 .modal__input:focus + .modal__svg {
 	fill: $accent-color;
 }
-.modal__label {
+.modal__label-checkbox {
 	color: $add-gray;
 	display: flex;
 	align-items: center;
-	@include text-settings(0.42px, 24px, 14px);
+	justify-content: center;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.42px;
 	margin-top: 20px;
 	margin-bottom: 30px;
-	@include flex-settings(8px, center);
+	gap: 8px;
 }
 .modal__custom-checkbox {
 	width: 16px;
@@ -120,7 +143,7 @@
 .modal__checkbox:focus + .modal__custom-checkbox {
 	border-color: $accent-color;
 }
-.modal__checkbox:checked + .modal__custom-checkbox{
+.modal__checkbox:checked + .modal__custom-checkbox {
 	background-color: $accent-color;
 	background-image: url(../images/modal_checkbox.svg);
 	background-repeat: no-repeat;

@@ -39,19 +39,18 @@
 }
 .projects__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     // @include flex-settings(30px, center);
 }
 .projects__item {
-    // flex-basis: calc((100% - 2 * 30px) / 3);
-    padding-bottom: 30px;
     flex-basis: 100%;
     @media screen and (min-width:768px) {
         @include flex-basis(30px, 2);
     }
-}
-.projects__item:nth-child(2n + 1) {
-    margin-right: 30px;
+    @media screen and (min-width:1200px) {
+        @include flex-basis(30px, 3);
+    }
 }
 .projects__item:hover,
 .projects__overlay {

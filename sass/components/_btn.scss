@@ -76,3 +76,9 @@
         opacity: 0.8;
     }
 }
+.modal__btn-close {
+    border-radius: 50%;
+    border-color: $white;
+    stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.10);
+}

@@ -29,6 +29,7 @@
     display: block;
     @media screen and (min-width:768px) {
         display: flex;
+        justify-content: center;
         column-gap: 165px;
         row-gap: 60px;
         flex-wrap: wrap;
@@ -45,7 +46,7 @@
     margin-bottom: 60px;
     text-align: center;
     @media screen and (min-width:768px) {
-        margin-left: 61px;
+        margin: 0;
     }
     @media screen and (min-width:1200px) {
         text-align: left;
@@ -56,7 +57,7 @@
     padding-top: 15px;
     margin-bottom: 55px;
     @media screen and (min-width:768px) {
-        margin-bottom: 60px;
+        margin: 0;
     }
     @media screen and (min-width:1200px) {
         margin-right: 93px;
@@ -70,6 +71,9 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     text-align: center;
+    @media screen and (min-width:1200px) {
+        text-align: left;
+    }
 }
 .footer-social__icon {
     fill: $white;
@@ -98,7 +102,7 @@
     // margin-left: 93px;
     // padding-top: 10px;
     @media screen and (min-width:768px) {
-        margin-left: 151px;
+        margin: 0;
     }
     @media screen and (min-width:1200px) {
         margin-left: 0;
@@ -118,6 +122,9 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     text-align: center;
+    @media screen and (min-width:1200px) {
+            text-align: left;
+    }
 }
 .footer-div-form__input {
     color: rgba(255, 255, 255, 0.6);

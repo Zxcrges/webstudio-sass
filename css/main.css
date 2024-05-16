@@ -349,7 +349,7 @@ img {
         flex-basis: calc((100% - 30px * (2 - 1)) / 2);
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .advantages__item {
     -ms-flex-preferred-size: calc((100% - 30px * (4 - 1)) / 4);
         flex-basis: calc((100% - 30px * (4 - 1)) / 4);
@@ -719,6 +719,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-column-gap: 165px;
        -moz-column-gap: 165px;
             column-gap: 165px;
@@ -747,7 +750,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .footer__div-address {
-    margin-left: 61px;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -763,7 +766,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .footer-social {
-    margin-bottom: 60px;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -782,6 +785,11 @@ img {
   text-transform: uppercase;
   margin-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-social__text {
+    text-align: left;
+  }
 }
 
 .footer-social__icon {
@@ -824,7 +832,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .footer-div-form {
-    margin-left: 151px;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -859,6 +867,11 @@ img {
   text-transform: uppercase;
   margin-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-div-form__text {
+    text-align: left;
+  }
 }
 
 .footer-div-form__input {
@@ -938,6 +951,35 @@ img {
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
+.modal__btn-close {
+  border: 2px solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 50%;
+  padding: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  background: none;
+  right: 8px;
+  top: 8px;
+}
+
+.modal__btn-close-icon {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__btn-close-icon:hover,
+.modal__btn-close-icon:focus {
+  fill: #2196f3;
+}
+
 .modal__svg {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -969,7 +1011,11 @@ img {
   line-height: normal;
   font-size: 12px;
   position: relative;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .modal__label:first-child {
   margin-top: 0;
@@ -1029,7 +1075,7 @@ img {
   fill: #2196f3;
 }
 
-.modal__label {
+.modal__label-checkbox {
   color: #757575;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1037,15 +1083,15 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 0.42px;
-  line-height: 24px;
-  font-size: 14px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  gap: 8px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  gap: 8px;
 }
 
 .modal__custom-checkbox {
@@ -1144,12 +1190,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .projects__item {
-  padding-bottom: 30px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
@@ -1159,9 +1207,11 @@ img {
         flex-basis: calc((100% - 30px * (2 - 1)) / 2);
   }
 }
-
-.projects__item:nth-child(2n+1) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    -ms-flex-preferred-size: calc((100% - 30px * (3 - 1)) / 3);
+        flex-basis: calc((100% - 30px * (3 - 1)) / 3);
+  }
 }
 
 .projects__item:hover,
@@ -1339,6 +1389,13 @@ img {
 .modal__submit:hover, .modal__submit:focus {
   cursor: pointer;
   opacity: 0.8;
+}
+
+.modal__btn-close {
+  border-radius: 50%;
+  border-color: #fff;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
 }
 
 .logo {
