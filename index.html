@@ -25,11 +25,6 @@
 			<div class="container header__container">
 				<a href="./index.html" class="link logo">
 					<span class="logo__accent">Web</span>Studio</a>
-					<button class="menu-toggle menu-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-						<svg width="40" height="40" class="menu_icon">
-							<use href="./images/symbol-defs.svg#icon-modal-svg"></use>
-						</svg>
-					</button>
 				<nav class="nav">
 					<ul class="list nav__list">
 						<li class="nav__item">
@@ -61,6 +56,47 @@
 						</a>
 					</li>
 				</ul>
+				<button class="menu__btn" data-menu-open>
+					<svg width="40" height="40" class="menu__icon">
+						<use href="./images/symbol-defs.svg#icon-modal-svg"></use>
+					</svg>
+				</button>
+				<div class="menu" data-menu>
+					<button class="menu__btn-close" data-menu-close>
+						<svg width="25" height="25" class="menu__icon">
+							<use href="./images/symbol-defs.svg#icon-modal-close"></use>
+						</svg>
+					</button>
+					<ul class="list menu__list">
+						<li class="menu__item">
+							<a href="./index.html" class="menu__link link">Студія</a>
+						</li>
+						<li class="menu__item">
+							<a href="./portfolio.html" class="menu__link link">Портфоліо</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link link">Контакти</a>
+						</li>
+					</ul>
+					<ul class="list menu__contact">
+						<li class="menu__contact-item">
+							<a href="tel:+380961111111" class="menu__contact-link link">
+								+38 096 111 11 11
+							</a>
+						</li>
+						<li class="menu__contact-item">
+							<a href="mailto:info@devstudio.com" class="menu__contact-link link">
+								info@devstudio.com
+							</a>
+						</li>
+					</ul>
+					<ul class="list menu__soc">
+						<li class="menu__soc-item"><a href="https://www.instagram.com/" class="menu__soc-link link">Instagram</a></li>
+						<li class="menu__soc-item"><a href="https://twitter.com/?lang=ru" class="menu__soc-link link">Twitter</a></li>
+						<li class="menu__soc-item"><a href="https://www.facebook.com/" class="menu__soc-link link">Facebook</a></li>
+						<li class="menu__soc-item"><a href="https://www.linkedin.com/" class="menu__soc-link link">LinkedIn</a></li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<main class="main">
@@ -428,5 +464,6 @@
 		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
 			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
 			crossorigin="anonymous"></script>
+		<script defer src="js/mobile-menu.js"></script>
 	</body>
 </html>
