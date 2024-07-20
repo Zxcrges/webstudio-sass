@@ -1006,6 +1006,14 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-div-form__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .footer-div-form__text {
   color: #fff;
@@ -1344,6 +1352,10 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projects__item {

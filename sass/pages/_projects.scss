@@ -41,7 +41,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    // @include flex-settings(30px, center);
+    @include flex-settings(30px, center);
 }
 .projects__item {
     flex-basis: 100%;

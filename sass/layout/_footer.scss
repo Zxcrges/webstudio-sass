@@ -109,6 +109,9 @@
     align-items: center;
     flex-direction: column;
     @include flex-settings(12px, center);
+    @media screen and (min-width:1200px) {
+        flex-direction: row;
+    }
 }
 .footer-div-form__text {
     color: $white;
